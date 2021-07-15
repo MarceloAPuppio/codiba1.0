@@ -131,15 +131,77 @@ nav i {
     background-color: white;
     background-color: rgb(66, 139, 6)
 }
+/*
+<div class="captcha-wrapper">
+                            <p id="captcha_visor" class="captcha-text"></p>
+                             <input id="captcha_text" class="form-control" type="text" placeholder="Ingrese el captcha" required >
+                            </label>  <lbel class="captcha-input">
+                                     a                
+                            <div class="captcha-btns-wrapper">
+                                <button id="btn_refresh"><i class="fa fa-refresh"></i></button>
+                                <button id="btn_voice"><i class="fa
+                                     fa-volume-up"></i></button>
+                            </div>
 
-.captcha__text {
-    display: inline-block;
+                        </div>
+*/
+
+.captcha-wrapper{
+    padding: 0.4rem 0;
+    border-radius: 0.2rem;
+    background: rgba(202, 199, 199, 0.26);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: " captcha captcha" "interface interface";
+    place-items: center;
+    width: 12rem;
+    height: 6rem;
+    margin: 0 auto;
+    /* align-items: center; */
+}
+.captcha-text {
+    grid-area: captcha;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    width: 11.5rem;
+    height: 85%;
     padding: 0.2rem 0.4rem;
-    color: rgb(185, 184, 184);
+    color: rgb(19, 19, 19);
     text-decoration: line-through;
     font-style: oblique;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     letter-spacing: 0.2rem;
-    background: #000;
     user-select: none;
+    margin-bottom: 0;
+}
+.captcha_interface{
+    grid-area: interface;
+    width: 11.5rem;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.captcha-input{
+    width: 10rem;
+    margin-bottom: 0;
+}
+
+.captcha-btns-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.captcha__btn{
+    background: transparent;
+    border: none;
+    font-size: .8rem;
 }

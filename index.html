@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="green">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black"> 
     <meta http-equiv="description" content="Somos representantes y distribuidores exclusivos de Dos Anclas. También  exportamos e importamos materia prima alimenticia: sal, azúcar, almidón de maiz.">
     <meta http-equiv="keywords" content="representantes, distribuidor,  exportadores,  importadores, materia, prima, alimenticia, sal, harina, azucar almidon, dos, anclas, quimicos, argentina, sales, industriales, ganaderas, consumo, humano, animal">
     <meta name="description" content="Somos representantes y distribuidores exclusivos de Dos Anclas. También  exportamos e importamos materia prima alimenticia: sal, harina, azúcar, aceite, almidón de maiz">
@@ -302,10 +304,19 @@
                         <textarea class="form-control" placeholder="Ingrese su consulta" name="textarea" required></textarea>
                     </div>
                     <div class="form-group">
-                        <p id="captcha_visor" class="captcha__text"></p>
-                        <label>
-                            <input id="captcha_text" class="form-control" type="text" placeholder="Ingrese el captcha" required >
-                        </label>                        
+                        <div class="captcha-wrapper">
+                            <p id="captcha_visor" class="captcha-text"></p>
+                           <div class="captcha_interface">    
+                               <label class="captcha-input">
+                                   <input id="captcha_text" class="form-control" type="text" placeholder="Ingrese el captcha" required >
+                               </label>                        
+                               <div class="captcha-btns-wrapper">
+                                   <button id="btn_refresh" class="captcha__btn"><i class="fa fa-refresh"></i></button>
+                                   <button id="btn_voice" class="captcha__btn"><i class="fa
+                                        fa-volume-up"></i></button>
+                               </div>
+                           </div>
+                        </div>
                     </div>
                     <input Type="submit" class="btn btn-success" style="width: 7rem;" value="Enviar"></input>
                     <input Type="reset" class="btn btn-danger" value="Cancelar" style="width: 7rem;"></input>
@@ -345,6 +356,7 @@
             e-mail: info@codiba.com
         </p>
     </footer>
+    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=b3FahaNz"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
