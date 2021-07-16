@@ -205,3 +205,6 @@ nav i {
     border: none;
     font-size: .8rem;
 }
+.hide{
+    display: none;
+}
