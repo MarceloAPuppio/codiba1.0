@@ -1,6 +1,5 @@
 <?php
-if ($_POST['stopspam'] != ""){
-	// Es un SPAMbot
+if (!empty($_POST['your_fax'])) {	// Es un SPAMbot
 	exit();
    
    } else {
